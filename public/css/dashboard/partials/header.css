@@ -1,0 +1,156 @@
+main {
+    background-color: var(--color-gray-3);
+    border-radius: var(--border-radius-3);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main .top {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-3) var(--border-radius-3) 0 0;
+    padding: 2.2rem;
+}
+
+main .top .message {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .top .message .text h2 {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray);
+    justify-content: space-between;
+}
+
+main .top .message .text h2 strong{
+    color: var(--color-black);
+}
+
+main .top .message .text h2 a{
+    color: var(--color-purple);
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+main .top .message .notification i{
+    font-size: 25px;
+    color: var(--color-gray);
+}
+
+main .top .title {
+    margin-top: 2rem;
+}
+
+main .top .title h1{
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--color-black);
+}
+
+main .top .title h3{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+main .top .insights {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.6rem;
+}
+
+main .top .insights .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .7rem;
+    padding: 1.4rem var(--padding-1);
+    border-radius: var(--border-radius-3);
+    box-shadow: 0px 0px 1px 1px #ddd;
+    transition: all 300ms ease;
+}
+
+main .top .insights .item:nth-child(1) .icon{
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-green);
+    display: flex;
+    font-size: 2rem;
+}
+
+main .top .insights .item:nth-child(2) .icon{
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-red);
+    display: flex;
+    font-size: 2rem;
+}
+
+main .top .insights .item:nth-child(3) .icon{
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-purple);
+    display: flex;
+    font-size: 2rem;
+}
+
+main .top .insights .item:nth-child(4) .icon{
+    padding: 1rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    background: var(--color-red);
+    display: flex;
+    font-size: 2rem;
+}
+
+main .top .insights .item .right small{
+    font-size: 12px;
+    color: var(--color-gray);
+}
+
+main .top .insights .item .right h3{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+/* ========================== MEDIA QUERY TABLET ========================== */
+@media screen and (max-width: 1200px) {
+
+    main .top .insights {
+        grid-template-columns: 1fr ;
+        gap: 0;
+    }
+
+
+}
+
+/* ========================== MEDIA QUERY PHONE ========================== */
+@media screen and (max-width: 768px) {
+
+    main {
+        margin-top: 5rem;
+    }
+
+    .menu button {
+        display: inline-block;
+        background: var(--color-white);
+        padding: .5rem;
+        border-radius: var(--border-radius-1);
+        cursor: pointer;
+        color: var(--color-black);
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .menu button i {
+        font-size: 2rem;
+    }
+}

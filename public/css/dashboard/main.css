@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =================== PARTIALS CSS ================= */
+@import "partials/header.css";
+@import "partials/sidebar.css";
+/* @import "partials/table.css"; */
+
+/* =================== VIEWS CSS ================= */
+@import "views/dashboard.css";
+
+/* =================== JAM-PELAJARAN CSS ================= */
+@import "views/jam-pelajaran/index.css";
+
+/* =================== ABSEN-SISWA CSS ================= */
+@import "views/absen-siswa/index.css";
+@import "views/absen-siswa/show.css";
+@import "views/absen-siswa/create.css";
+
+/* =================== DATA-SISWA CSS ================= */
+@import "views/data-siswa/index.css";
+@import "views/data-siswa/show.css";
+@import "views/data-siswa/create.css";
+
+/* =================== TUGAS-SISWA CSS ================= */
+@import "views/tugas-siswa/index.css";
+
+/* =================== ADMINISTRATION CSS ================= */
+@import "views/administration/administration.css";
+
+
+/* ========================== ROOT VARIABELS ========================== */
+:root {
+    --color-primary:#4155E5;
+    --color-black: #050607 ;
+    --color-white: #FFF ;
+    --color-white-2: #cccccc ;
+    --color-pink: #9778A1 ;
+    --color-purple: #4155E5 ;
+    --color-purple-hover: rgb(38, 32, 105) ;
+    --color-brown: #5C5F61 ;
+    --color-gray: #939AAC ;
+    --color-gray-2: #AAB2C1 ;
+    --color-gray-3: #F2F4F5 ;
+    --color-red: #e83753;
+    --color-red-hover: #b42a3e;
+    --color-yellow: #FF9C00;
+    --color-yellow-hover: #d38b16;
+    --color-green: #43be84;
+    --color-green-hover: #2d855c;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: .4rem;
+    --border-radius-2: .8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+}
+
+
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-black);
+    user-select: none;
+    overflow-x: none;
+    color: var(--color-black);
+}
+
+.container {
+    display: grid;
+    /* width: 96%; */
+    margin: .8rem;
+    gap: 1.8rem;
+    grid-template-columns: 16rem auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: .87rem;
+}
+
+h4 {
+    font-size: .8rem;
+}
+
+h5{
+    font-size: .77rem;
+}
+
+small{
+    font-size: .76rem;
+}
+
+.profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+table {
+    border-spacing: 0;
+}
+
+/* ========================== MEDIA QUERY TABLET ========================== */
+@media screen and (max-width: 1200px) {
+    .container {
+        grid-template-columns: 7rem auto;
+    }
+
+
+}
+
+/* ========================== MEDIA QUERY PHONE ========================== */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================== MEDIA QUERY TABLET ========================== */
+/* @media screen and (max-width: 1200px) {
+    .container {
+        grid-template-columns: 7rem auto;
+    }
+
+    aside .logo h2 {
+        display: none;
+    }
+    aside .logo h2 {
+        display: none;
+    }
+
+    aside .bottom {
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .top .insights {
+        grid-template-columns: 1fr ;
+        gap: 0;
+    }
+
+
+} */
+
+/* ========================== MEDIA QUERY PHONE ========================== */
+/* @media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background: var(--color-black);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    aside .logo {
+        margin-left: 1rem;
+    }
+
+    aside .logo h2 {
+        display: inline;
+    }
+
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child {
+        margin-top: 0;
+    }
+
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+        color: var(--color-white);
+    }
+
+    main {
+        margin-top: 5rem;
+    }
+
+    .menu button {
+        display: inline-block;
+        background: var(--color-white);
+        padding: .5rem;
+        border-radius: var(--border-radius-1);
+        cursor: pointer;
+        color: var(--color-black);
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .menu button i {
+        font-size: 2rem;
+    }
+} */

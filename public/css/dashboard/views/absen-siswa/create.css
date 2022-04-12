@@ -1,0 +1,130 @@
+main .create{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-2);
+    padding: 2.2rem;
+}
+
+main .create .navbar{
+    margin-bottom: 2rem;
+}
+
+main .create .navbar a{
+    color: var(--color-gray);
+    font-size: 32px;
+    text-decoration: none;
+}
+
+main .create .navbar a:hover{
+    color: var(--color-black);
+}
+
+main .create h1{
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+main .create .form-control {
+    margin-bottom: .7rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 17rem auto;
+}
+
+main .create .form-control label{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-gray);
+}
+
+main .create .form-control input{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-black);
+    transition: all 300ms ease;
+}
+
+main .create .form-control input:focus{
+    padding: .8rem;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0px 0px 1px 1px #ddd;
+}
+
+main .create .form-control select{
+    font-size: 18px;
+    width: 100%;
+    font-weight: 500;
+    color: var(--color-black);
+    transition: all 300ms ease;
+}
+
+main .create .form-control select:focus{
+    padding: .8rem;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0px 0px 1px 1px #ddd;
+}
+
+main .create .body {
+    display: block;
+}
+
+main .create .body label{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-gray);
+    display: block;
+    margin-bottom: .7rem;
+    margin-top: 1rem;
+}
+
+main .create .body .ck-label{
+    display: none;
+}
+
+/* main .create .body textarea{
+    color: var(--color-black);
+    transition: all 300ms ease;
+}
+
+main .create .body trix-editor{
+    font-size: 16px;
+    color: var(--color-black);
+    transition: all 300ms ease;
+} */
+
+main .create .btn{
+    margin-top: 1rem;
+    font-size: 14px;
+    background: var(--color-purple);
+    color: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+main .create .btn:hover{
+    margin-left: 1rem;
+    transition: all 300ms ease;
+}
+
+/* ========================== MEDIA QUERY TABLET ========================== */
+@media screen and (max-width: 1200px) {
+
+   
+}
+
+/* ========================== MEDIA QUERY PHONE ========================== */
+@media screen and (max-width: 768px) {
+    
+    main .create .form-control {
+        display: block;
+    }
+
+    main .create .form-control select {
+        display: block;
+    }
+    
+}

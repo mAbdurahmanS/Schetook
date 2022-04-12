@@ -1,0 +1,72 @@
+main .bottom {
+    padding: 2rem;
+}
+
+main .bottom div{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-2);
+    margin-bottom: 2rem;
+}
+main .bottom div h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-black);
+}
+
+main .bottom div .top-table{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+main .bottom div .top-table .right{
+    display: flex;
+    gap: 1rem;
+}
+main .bottom div .top-table .right a.add{
+    display: block;
+    font-size: 13px;
+    background: var(--color-purple);
+    color: var(--color-white);
+    padding: .9rem 2.1rem;
+    border-radius: var(--border-radius-1);
+    transition: all 300ms ease;
+}
+main .bottom div .top-table .right .dropdown{
+    position: relative;
+    display: inline-block;
+}
+main .bottom div .top-table .right .dropdown .btn-filter{
+    display: block;
+    font-size: 13px;
+    background: var(--color-green);
+    color: var(--color-white);
+    padding: .9rem 2.1rem;
+    border-radius: var(--border-radius-1);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+main .bottom div .top-table .right .dropdown:hover .btn-filter{
+    background: var(--color-black);
+}
+main .bottom div .top-table .right .dropdown .dropdown-filter{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 1;
+}
+main .bottom div .top-table .right .dropdown:hover .dropdown-filter{
+    display: block;
+}
+main .bottom div .top-table .right .dropdown .dropdown-filter a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+main .bottom div .top-table .right .dropdown .dropdown-filter a:hover{
+    color: #ddd;
+}

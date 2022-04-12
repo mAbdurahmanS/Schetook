@@ -1,0 +1,29 @@
+main .bottom {
+    padding: 2rem;
+}
+
+main .bottom .line-chart{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-2);
+    margin-bottom: 2rem;
+}
+
+main .bottom .line-chart h2{
+    font-weight: 500;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+main .bottom .line-chart table{
+    width: 100%;
+    text-align: center;
+}
+main .bottom .line-chart table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-white-2);
+}
+
+main .bottom .line-chart table tbody tr:last-child td {
+    border: none;
+}

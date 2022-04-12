@@ -1,0 +1,59 @@
+main .show{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-2);
+    padding: 2.2rem;
+}
+
+main .show .navbar{
+    margin-bottom: 2rem;
+}
+
+main .show .navbar a{
+    color: var(--color-gray);
+    font-size: 32px;
+    text-decoration: none;
+}
+
+main .show .navbar a:hover{
+    color: var(--color-black);
+}
+
+main .show .body h2{
+    font-size: 72px;
+    font-weight: 700;
+    color: #050505;
+    text-decoration: none;
+    transition: all ease-in 0.2s;
+    margin-bottom: 1rem;
+}
+
+main .show .body h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #050505;
+    margin-bottom: 1.5rem;
+}
+
+main .show .body .h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7C83FD;
+    text-decoration: none;
+    transition: all ease-in 0.2s;
+}
+
+main .show .body .h5:hover{
+    color: #050505;
+    transition: all ease-in 0.2s;
+}
+
+main .show .body .author {
+    margin-bottom: 7rem;
+}
+
+main .show .body p{
+    font-size: 21px;
+    font-weight: 400;
+    color: #333333;
+}
